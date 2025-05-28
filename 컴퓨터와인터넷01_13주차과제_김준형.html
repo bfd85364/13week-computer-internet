@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1>글작성하기</h1>
+</head>
+<div>
+
+<!--CSS-->
+<style>
+
+ h1,h2{
+	color: white;
+	background-color:#0855dd;
+ }
+
+ body{
+	  background-color: #dfdfdf;
+	}
+
+footer{
+    color: gold;
+    background-color: #0855dd;
+}
+
+textarea{
+    width:400px; 
+    height:400px;
+}
+
+
+
+</style>
+<!--html--본문-->
+
+</div>
+<body>
+<form method="post">
+<table>
+<tr>
+    <td><label for="name">작성자</label><input id="name" type="text"></td>
+</tr>
+<tr>
+    <td><label for="name">이메일</label><input id="name" type="email"><label>@</label><input id="name" type="email-tail"></td>
+</tr>
+<tr>
+    <td><label for="number">휴대폰</label>
+     <select> 
+        <option>010</option>  
+        <option>070</option>
+        <option>031</option>
+        <option>042</option>
+    </select><label>- </label><input id="number" type="phone-middle-num"><label>- </label><input id="number" type="phone-tail-num"></td>
+</tr>
+</table>
+<div><br>
+<table>
+ <td>
+<label for="text">내용</label><span>
+<textarea>내용을 입력하여주세요.</textarea></span>
+</div>
+<input type="submit" value="제출"></td>
+</table>
+</fieldset>
+</form>
+</body>
+<footer>
+<span>국립 공주대학교 202305127 김준형</span>
+</footer>
+</html>

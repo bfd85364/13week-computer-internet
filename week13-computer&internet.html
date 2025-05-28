@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1>컴퓨터와 인터넷01분반 13주차</h1>
+<h2>학번: 202305127 김준형</h2>
+</head>
+<div>
+
+<!--CSS-->
+<style> 
+
+ h1,h2{
+	color: white;
+	background-color:#0855dd;
+    width : 2000px; float: left;
+ }
+  
+ h1::selection{color:black;}
+ h2::selection{color: gold;}
+ p::selection{color:red;}
+
+ body{
+	  background-color: #dfdfdf;
+	}
+
+footer{
+    color: gold;
+    background-color: #0855dd;
+}
+
+textarea{
+    width:800px; 
+    height:400px;
+}
+</style>
+<!--html--본문-->
+
+</div>
+<body>
+<!--입력 방식 연습-->
+<!--get-->
+<!---<div>
+    <form method="get">  
+        <input type="text" name="search">
+        <input type="submit">
+    </form>-->
+
+<!--method-->
+ <!--<form method="post">
+        <input type="text" name="search">
+        <input type="submit">
+    </form>
+</div> -->
+
+<form method="post">
+    <fieldset>
+        <lengend>입력양식 연습</lengend>
+    <!---사용자 입력방식-->
+    <div>
+    <input type="text" name="text" value="text"><br>
+    <input type="password" name="password" value="password"><br>
+    <input type="file" name="file" value="file"><br>
+    <input type="checkbox" name="checkbox" value="checkbox"><br>
+    </div>
+
+    <!--보이지 않는 방식-->
+       <input type="hidden" name="hidden" value="hidden"><br>
+
+    <!--버튼 (ID  태그방식)-->
+          <input id="man" type="radio" name="gender" value="m">
+          <label for="man">남자</label><br>
+
+           <input id="woman" type="radio" name="gender" value="w">
+          <label for="woman">여자</label><br>
+          <input id="button" type="button" name="submit"  value="가입"><br>
+
+ <div>    
+    <select>
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>어묵</option>
+    </select><br>
+</div>
+
+<table>
+<tr>
+    <td><label for="name">이름</label></td>
+    <td><input id="name" type="text"></td>
+</tr>
+<tr>
+    <td><label for="name">이메일</label></td>
+    <td><input id="name" type="email"></td>
+</tr>
+</table>
+<input type="submit">
+<div>
+    <textarea>
+        내용을 입력하여주세요.
+    </textarea>
+</div>
+</fieldset>
+</form>
+<div>
+    <h1>시맨틱 태그</h1>
+</div>
+<div>
+    <ul>
+        <li><a href="#">메뉴-1</a></li>
+        <li><a href="#">메뉴-2</a></li>
+        <li><a href="#">메뉴-3</a></li>
+    </ul>
+</div>
+    <div>
+        <h1>공간 분활 태그1: div태그</h1>
+        <p>div 태그는 공간 분활 태그로 문단이나 다른 속성태그 따위를 블록 형식으로 공간을 분활합니다.</p>
+        <p>사실 이런식으로 div를 남남발하는 것은 가시성을 망치기 때문에에 그닥 좋은 방법은 아닙니다.</p>
+
+        <h2>공간 분활태그2: span태그</h2>
+        <span>
+          <p>문단을 인라인형식으로 분활활합니다.</p>  
+        </span>
+    </div>
+    <article>
+        <h1>시맨틱태그: article</h1>
+        <p>따라서, 지금과 같이 시맨틱 태그를 활용하여 해당 분활태그가 어디를 기분으로 삼고 있는지 표시하여</p>
+        <p>기존 공간 분활태그인 div보다 더 가시화 시키는 것이 가능합니다.</p>
+    </article>
+
+
+</body>
+<footer>
+<span>국립 공주대학교 202305127 김준형</span>
+</footer>
+</html>
